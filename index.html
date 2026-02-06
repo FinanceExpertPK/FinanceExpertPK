@@ -3,62 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Nasrullah | Tax Consultant & Corporate Advisor</title>
+    <title>Muhammad Nasrullah | Professional Tax & Corporate Consultant</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root { --navy: #0a192f; --gold: #c5a059; --light: #f8f9fa; }
-        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--light); color: var(--navy); line-height: 1.6; }
+        :root { --navy: #0a192f; --gold: #c5a059; --white: #ffffff; --light-gray: #f4f7f6; }
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--light-gray); color: var(--navy); line-height: 1.6; }
         
         /* Hero Section */
-        header { background: var(--navy); color: white; padding: 100px 20px; text-align: center; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 0; color: var(--gold); }
-        .tagline { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+        header { background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center; color: var(--white); padding: 120px 20px; text-align: center; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; margin: 0; color: var(--gold); letter-spacing: 1px; }
+        .tagline { font-size: 1.3rem; opacity: 0.8; margin-top: 15px; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; }
 
         /* Services Section */
-        .container { max-width: 1000px; margin: -50px auto 50px; padding: 20px; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .service-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 4px solid var(--gold); }
-        .service-card h3 { color: var(--navy); margin-top: 0; }
+        .container { max-width: 1100px; margin: -60px auto 60px; padding: 0 20px; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .service-card { background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-bottom: 5px solid var(--gold); transition: transform 0.3s ease; }
+        .service-card:hover { transform: translateY(-10px); }
+        .service-card h3 { color: var(--navy); font-size: 1.5rem; margin-top: 0; border-bottom: 2px solid var(--light-gray); padding-bottom: 10px; }
+        .service-card p { color: #555; font-size: 1rem; }
         
         /* Buttons */
-        .btn { display: inline-block; padding: 15px 35px; background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 30px; transition: 0.3s; }
-        .btn:hover { background: #b08d4a; transform: translateY(-3px); }
-        .yt-link { color: var(--navy); text-decoration: underline; display: block; margin-top: 20px; font-size: 0.9rem; }
+        .cta-container { text-align: center; margin-top: 50px; }
+        .btn { display: inline-block; padding: 18px 45px; background: var(--gold); color: var(--navy); text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 1.1rem; box-shadow: 0 4px 15px rgba(197, 160, 89, 0.4); transition: 0.3s; }
+        .btn:hover { background: var(--white); color: var(--navy); transform: scale(1.05); }
+        .yt-link { display: block; margin-top: 25px; color: var(--navy); font-weight: 600; text-decoration: none; font-size: 1rem; }
+        .yt-link:hover { color: #ff0000; text-decoration: underline; }
 
-        footer { text-align: center; padding: 40px; font-size: 0.8rem; color: #666; }
+        footer { background: var(--navy); color: rgba(255,255,255,0.6); text-align: center; padding: 40px; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Muhammad Nasrullah</h1>
-        <p class="tagline">Strategic Tax Consulting & Corporate Compliance Services</p>
+        <p class="tagline">Tax Compliance & Corporate Advisory</p>
     </header>
 
     <div class="container">
         <div class="services-grid">
             <div class="service-card">
-                <h3>Income Tax Returns</h3>
-                <p>Expert filing for Salaried Individuals, Business Individuals, and AOPs. We ensure maximum legal tax savings and accurate Wealth Statements.</p>
+                <h3>Income Tax Services</h3>
+                <p>Strategic filing for Individuals, AOPs, and Companies. We handle Wealth Statements, Tax Audit Defense, and FBR Notice Replies with 100% compliance.</p>
             </div>
             <div class="service-card">
-                <h3>Sales Tax Compliance</h3>
-                <p>Monthly Sales Tax Returns, FBR/SRB/PRA registrations, and Annexure management for small and medium enterprises.</p>
+                <h3>Sales Tax & GST</h3>
+                <p>Complete Sales Tax management including FBR/SRB/PRA registrations, monthly return filing, and Annexure handling for businesses.</p>
             </div>
             <div class="service-card">
-                <h3>Company Incorporation</h3>
-                <p>Complete SECP registration, NTN/STRN issuance, and Chamber of Commerce memberships for new startups and private limited companies.</p>
+                <h3>Corporate Services</h3>
+                <p>Hassle-free SECP Company Incorporation, Partnership (Firm) Registration, NTN/STRN issuance, and Chamber of Commerce licensing.</p>
             </div>
         </div>
 
-        <div style="text-align: center;">
-            <a href="https://wa.me/92XXXXXXXXXX" class="btn">Schedule a Consultation</a>
-            <a href="https://www.youtube.com/@FinanceExpertPK" class="yt-link">View Educational Tax Guides on YouTube</a>
+        <div class="cta-container">
+            <a href="https://wa.me/YOUR_PHONE" class="btn">Book a Professional Consultation</a>
+            <a href="https://www.youtube.com/@FinanceExpertPK" class="yt-link">▶ Watch Educational Tax Guides on YouTube</a>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Muhammad Nasrullah | Finance Expert PK. All Rights Reserved.
+        &copy; 2026 Muhammad Nasrullah | Finance Expert PK. <br>
+        Registered Tax Consultant | Serving Clients Nationally.
     </footer>
 
 </body>
